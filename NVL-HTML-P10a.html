@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<form method="post" action="pagina_xime.php">
+     <div>
+       <label for="codigopostal">Código Postal:</label>
+       <br>
+       <input id="codigopostal" type="text">
+     </div>
+     <br>
+     <div>
+     	Indique, del 1 al 5, su grado de satisfacción con el producto, donde 5 es totalmente satisfecho y 1 es nada satisfecho.<br>
+       <input type="radio" name="number" value="5" checked> 5
+  <input type="radio" name="number" value="4"> 4
+  <input type="radio" name="number" value="3"> 3
+  <input type="radio" name="number" value="2"> 2
+  <input type="radio" name="number" value="1"> 1
+     </div>
+     <br>
+     <div>
+       <label for="email">E-mail:</label>
+       <br>
+       <input id="email" type=”text”>
+     </div>
+     <br>
+     <div>
+     Indique los puntos <strong>positivos</strong> del producto.
+     <br>
+       <textarea id="comentario" rows="7" cols="45"></textarea>
+     </div>
+     <br>
+     <div>
+       Indique los puntos <strong>negativos</strong> del producto.
+     <br>
+       <textarea id="comentario" rows="7" cols="45"></textarea>
+    </div>
+    <br>
+    <div>
+    <h2> <strong> Opción 1 </strong> </h2>
+    A continuación, le presentamos algunas características del producto para que elija la opción que considere, entre <strong>excelente, bueno, regular y pésimo.</strong> 
+       <br>
+       <br>
+       <label for="disypres"><strong>Diseño y presentación:</strong></label>
+       <select id="disypres">
+         <option value=”EX”>Excelente</option>
+         <option value=”BU”>Bueno</option>
+         <option value=”RE”>Regular</option>
+         <option value=”PE”>Pésimo</option>
+       </select>
+       <label for="cali"><strong>Calidad:</strong></label>
+       <select id="cali">
+         <option value=”EX”>Excelente</option>
+         <option value=”BU”>Bueno</option>
+         <option value=”RE”>Regular</option>
+         <option value=”PE”>Pésimo</option>
+       </select>
+       <label for="pre"><strong>Precio:</strong></label>
+       <select id="pre">
+         <option value=”EX”>Excelente</option>
+         <option value=”BU”>Bueno</option>
+         <option value=”RE”>Regular</option>
+         <option value=”PE”>Pésimo</option>
+       </select>
+   </div>
+   <br>
+   <div>
+   <h2> <strong> Opción 2 </strong> </h2>
+    A continuación, le presentamos un listado de características del producto para que elija la opción que considere, entre <strong> 4:excelente, 3:bueno, 2:regular y 1:pésimo.</strong>
+    <br>
+    <div>
+    	<table>
+        <tr>
+    		<th>Característica</th>
+    		<th>4</th>
+    		<th>3</th>
+    		<th>2</th>
+    		<th>1</th>
+  		</tr>	
+        <tr>
+    		<td>Diseño</td>
+    		<td align="center"><input type="radio" name="dis" checked></td>
+    		<td align="center"><input type="radio" name="dis"></td>
+    		<td align="center"><input type="radio" name="dis"></td>
+    		<td align="center"><input type="radio" name="dis"></td>
+    	</tr>
+        <tr>
+    		<td>Calidad</td>
+    		<td align="center"><input type="radio" name="cal" checked></td>
+    		<td align="center"><input type="radio" name="cal"></td>
+    		<td align="center"><input type="radio" name="cal"></td>
+    		<td align="center"><input type="radio" name="cal"></td>
+    	</tr>
+        <tr>
+    		<td>Precio</td>
+    		<td align="center"><input type="radio" name="prec" checked></td>
+    		<td align="center"><input type="radio" name="prec"></td>
+    		<td align="center"><input type="radio" name="prec"></td>
+    		<td align="center"><input type="radio" name="prec"></td>
+    	</tr>
+        </table>
+    </div>
+    <br>
+<input type="submit" value="Enviar">
+   
+</form>
+</html>
